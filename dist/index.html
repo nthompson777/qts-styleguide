@@ -1,0 +1,1297 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <title>
+        &nbsp; 
+      QTS Style Guide
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="stylesheet" href="/assets/css/styles/atom-one-light.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=zXbBrdGllj">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=zXbBrdGllj">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=zXbBrdGllj">
+    <link rel="manifest" href="/site.webmanifest?v=zXbBrdGllj">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=zXbBrdGllj" color="#03629f">
+    <link rel="shortcut icon" href="/favicon.ico?v=zXbBrdGllj">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#03629f">
+    <style>
+      /* This styles the color blocks used in the color documentation. */
+      .color-block {
+        border-radius: 2px;
+        display: block;
+        padding: 8px 8px 6px;
+        color: #333;
+        border: 1px solid #ddd;
+      }
+        .color-swatch {
+          display: block;
+          width: 100%;
+          height: 100px;
+          margin-bottom: 0.42857rem;
+        }
+        .sticky .vertical.menu .is-active {
+          font-weight: bold;
+          background: rgb(236, 238, 239);
+        }
+      </style>
+  </head>
+    <body id="home">
+    
+    <div class="grid-container-fluid">
+      <div class="grid-x">
+        <div class="small-12 cell">
+          <span #top></span>
+          <header class="top-bar">
+            <div class="top-bar-left">
+              <div class="hamburger hide-for-medium" data-toggle="offCanvasMenu" aria-controls="offCanvasMenu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+              <a href="/" title="Style Guide Home">
+                <div class="mainlogo">
+                </div>
+                <div class="appTitle">
+                  QTS Style Guide
+                </div>
+              </a>
+            </div>
+            <nav class="top-bar-right hide-for-small-only">
+              <ul class="menu">
+                <li>
+                  <a href="/fontqts">Font QTS</a>
+                </li>
+                <li>
+                  <a href="/palette">Color Palette</a>
+                </li>
+              </ul>
+            </nav>
+            
+            <nav class="off-canvas position-left" id="offCanvasMenu" aria-hidden="true" data-off-canvas> 
+              <ul class="menu vertical" data-magellan>
+                <li class="main-title">Main Menu</li>
+                <li><a href="/fontqts" data-close>Font QTS</a></li>
+                <li><a href="/palette" data-close>Color Palette</a></li> 
+                <li><hr></li>
+                <li class="title">TOC</li>
+                <li><a href="#grid" data-close>Grid Layout</a></li>
+                <li><a href="#colors" data-close>Color Palette</a></li>
+                <li><a href="#typography" data-close>Typography</a></li>
+                <li><a href="#buttons" data-close>Buttons</a></li>
+                <li><a href="#forms" data-close>Forms</a></li>
+                <li><a href="#tables" data-close>Tables</a></li>
+                <li><a href="#tooltips" data-close>Tooltips</a></li>
+                <li><a href="#charts" data-close>Charts &amp; Maps</a></li>
+                <li><a href="#modals" data-close>Modals</a></li>
+                <li><a href="#tabs" data-close>Tabs</a></li>
+                <li><a href="#accordions" data-close>Accordions</a></li>
+                <li><a href="#iconography" data-close>Iconography</a></li>
+                <li><a href="#badges" data-close>Badges</a></li>
+                <li><a href="#callouts" data-close>Callouts</a></li>
+                <li><a href="#cards" data-close>Cards</a></li>
+                <li><a href="#sliders" data-close>Sliders</a></li>
+                <li><a href="#switches" data-close>Switches</a></li>
+                <li><a href="#pagination" data-close>Pagination</a></li>
+              </ul>
+              <button class="close-button" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" data-close>
+                <span aria-hidden="true">×</span>
+              </button>
+            </nav>
+          </header>
+        </div><!-- / Parent cell -->
+      </div><!-- /grid-x -->
+    </div><!-- /grid-container-fluid -->
+    
+    <main class="grid-container-fluid">
+      <div class="grid-x">
+        <div class="small-12 cell">
+    
+    <div class="off-canvas-wrapper">
+
+<div class="grid-x grid-padding-x grid-margin-x">
+  <div class="medium-4 large-3 xlarge-2 cell sticky-container hide-for-small-only" data-sticky-container>
+    <div class="sticky" data-sticky data-top-anchor="topsticky:top" data-btm-anchor="bottomSticky:bottom" data-events="resize">
+      <ul class="vertical menu" data-magellan>
+        <li class="h4">TOC</li>
+        <li><a href="#grid">Grid Layout</a></li>
+        <li><a href="#colors">Color Palette</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#tooltips">Tooltips</a></li>
+        <li><a href="#charts">Charts &amp; Maps</a></li>
+        <li><a href="#modals">Modals</a></li>
+        <li><a href="#tabs">Tabs</a></li>
+        <li><a href="#accordions">Accordions</a></li>
+        <li><a href="#iconography">Iconography</a></li>
+        <li><a href="#badges">Badges</a></li>
+        <li><a href="#callouts">Callouts</a></li>
+        <li><a href="#cards">Cards</a></li>
+        <li><a href="#sliders">Sliders</a></li>
+        <li><a href="#switches">Switches</a></li>
+        <li><a href="#pagination">Pagination</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="medium-8 large-9 xlarge-10 cell"> 
+    <div class="column row" id="topsticky">
+      <h1>QTS Style Guide</h1>
+      <p>
+        Updated: 10/11/18 &nbsp; - &nbsp; v1.0.6 &nbsp; &nbsp; <a href="changelog.html">Changelog</a>
+      </p>
+      <p class="lead">This style guide uses the 'Foundation for Sites' framework. For even more detailed information on how to use this responsive front-end framework, <a href="https://foundation.zurb.com/sites/docs/xy-grid.html" target="_blank">check out the documentation</a>.</p><br>
+
+      <div id="grid" data-magellan-target="grid" class="anchor"></div>
+
+      <h2> Grid Layout </h2>
+
+      <p>Our layouts use 'The XY Grid' which is built around two key elements: grid-x and cells. grid-container create a max-width and contain the grid, and cells create the final structure. Everything on your page that you don't give a specific structural style to should be within a grid-x or cell.</p>
+
+      <h3>How to Use</h3>
+
+        <p>Using this framework is simple and pretty straight-forward. Here's how your code will look when you use a series of  tags to create cells.</p>
+
+        <div class="grid-x grid-margin-x">
+          <div class="large-12 cell">
+            <div class="primary callout">
+              <p><strong>This is a twelve column section in a grid-x with grid-margin-x.</strong> Each of these includes a div.callout element so you can see where the cells are - it's not required at all for the grid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+          <div class="large-6 medium-6 cell">
+            <div class="primary callout">
+              <p>Six cell</p>
+            </div>
+          </div>
+          <div class="large-6 medium-6 cell">
+            <div class="primary callout">
+              <p>Six cell</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-x grid-margin-x">
+          <div class="large-4 medium-4 small-4 cell">
+            <div class="primary callout">
+              <p>Four cell</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 cell">
+            <div class="primary callout">
+              <p>Four cell</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 cell">
+            <div class="primary callout">
+              <p>Four cell</p>
+            </div>
+          </div>
+        </div>
+
+
+<section><pre><code>&lt;div class="grid-x grid-margin-x"&gt;
+  &lt;div class="small-6 medium-4 large-3 cell"&gt;...&lt;/div&gt;
+  &lt;div class="small-6 medium-8 large-9 cell"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid-x grid-margin-x"&gt;
+  &lt;div class="small-6 medium-4 large-4 cell"&gt;...&lt;/div&gt;
+  &lt;div class="small-6 medium-8 large-4 cell"&gt;...&lt;/div&gt;
+  &lt;div class="small-12 large-4 cell"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></section>
+
+
+
+        <h4> Nesting grid-x </h4>
+
+        <p>In the Grid you can nest cells down as far as you'd like. Just embed grid-x inside cells and go from there. Each embedded grid-x can contain up to 12 cells.</p>
+
+
+<section><pre><code>&lt;div class="grid-x"&gt;
+  &lt;div class="small-8 cell"&gt;8
+    &lt;div class="grid-x"&gt;
+      &lt;div class="small-8 cell"&gt;
+        8 Nested
+        &lt;div class="grid-x"&gt;
+          &lt;div class="small-8 cell"&gt;
+            8 Nested Again
+          &lt;/div&gt;&lt;!-- /cell --&gt;
+          &lt;div class="small-4 cell"&gt;
+            4
+          &lt;/div&gt;&lt;!-- /cell --&gt;
+        &lt;/div&gt; &lt;!-- /grid-x Nested Child --&gt;
+      &lt;/div&gt;&lt;!-- /cell --&gt;
+      &lt;div class="small-4 cell"&gt;
+        4
+      &lt;/div&gt;&lt;!-- /cell --&gt;
+    &lt;/div&gt;&lt;!-- /grid-x Child --&gt;
+  &lt;/div&gt;&lt;!-- /cell Parent --&gt;
+  &lt;div class="small-4 cell"&gt;
+    4
+  &lt;/div&gt;&lt;!-- /cell Parent --&gt;
+&lt;/div&gt;&lt;!-- /grid-x Parent --&gt;
+</code></pre></section>
+
+
+        <h4> Small Grid</h4>
+
+        <p>As you've probably noticed in the examples above, you have access to a small, medium, and large grid. If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid. You can override your small grid classes by adding medium or large grid classes.</p>
+
+
+<section><pre><code>&lt;div class="grid-x"&gt;
+  &lt;div class="small-2 cell"&gt;2&lt;/div&gt;
+  &lt;div class="small-10 cell"&gt;10, last&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="grid-x"&gt;
+  &lt;div class="small-3 cell"&gt;3&lt;/div&gt;
+  &lt;div class="small-9 cell"&gt;9, last&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></section>
+
+
+      <div id="colors" data-magellan-target="colors" class="anchor"></div>
+
+      <h2>QTS Color Palette</h2>
+      <p class="lead">The <a href="./palette/index.html">QTS Color palette</a> and extended palette can be found <a href="./palette/index.html">here</a>.<br> 
+      Hex values are also found in the <code>\_settings.scss</code> file.</p>
+      <section>
+        <div class="grid-x grid-margin-x grid-padding-y">
+          <div class="small-6 medium-4 large-2 cell">
+            <div class="color-block">
+              <span style="background: #03629F" class="color-swatch"></span>
+                <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="$primary-color">Brand Primary</span><br> 
+                #03629F<br>
+            </div>
+          </div>
+          <div class="small-6 medium-4 large-2 cell">
+            <div class="color-block">
+              <span style="background: #54A82D" class="color-swatch"></span>
+              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="$secondary-color">Brand Secondary</span><br> 
+              #54A82D
+            </div>
+          </div>
+          <div class="small-6 medium-4 large-2 cell">
+            <div class="color-block">
+              <span style="background: #e07604" class="color-swatch"></span>
+              <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="$tertiary-color">Brand Tertiary</span><br>
+              #e07604
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid-x grid-margin-x">
+          <div class="small-6 medium-4 large-2 cell">
+            <div class="color-block">
+              <span style="background: #54A82D" class="color-swatch"></span>
+              Success<br>
+              #54A82D
+            </div>
+          </div>
+          <div class="small-6 medium-4 large-2 cell">
+            <div class="color-block">
+              <span style="background: #cc8604" class="color-swatch"></span>
+              Warning<br>
+              #cc8604
+            </div>
+          </div>
+          <div class="small-6 medium-4 large-2 cell">
+            <div class="color-block">
+              <span style="background: #cc4b37" class="color-swatch"></span>
+              Alert<br>
+              #cc4b37
+            </div>
+          </div>
+        </div><br>
+      </section>
+
+
+      <div id="typography" data-magellan-target="typography" class="anchor"></div>
+
+      <h2> Typography </h2>
+      <p class="lead">QTS websites and applications use <strong>Roboto font ONLY</strong> for body/paragraph text and headings. Note: Roboto will be embedded globally in our applications. <strong>Please DO NOT add any additional fonts</strong> for the sake of consistency. Too many fonts (and font colors!) within an application causes it to <em><span style="font-family: 'Courier New', Courier, monospace;">l<span style="color: purple">o</span><span style="color: orange">o</span>k</span></em> <em><span style="font-family: 'Comic Sans MS', cursive, sans-serif;">unpro<span style="color: red">f</span>essi<span style="color: green">o</span>nal</span></em>.</p> 
+
+      <section>
+        <h4> Headings </h4>
+        <p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest).</p>
+      </section>
+
+      <section>
+        <h4> Paragraphs </h4>
+        <p>Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.</p>
+      </section>
+
+      <section>
+        <h1>Heading Level 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+      </section>
+
+      <section>
+        <h2>Heading Level 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+      </section>
+
+      <section>
+        <h3>Heading Level 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+      </section>
+
+      <section>
+        <h4>Heading Level 4</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+      </section>
+
+      <section>
+        <h5>Heading Level 5</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+      </section>
+
+      <section>
+        <h6>Heading Level 6</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+      </section>
+
+
+      <div id="buttons" data-magellan-target="buttons" class="anchor"></div>
+
+      <h2> Buttons </h2>
+      <p class="lead">Buttons are tied to an action. Primary buttons are primary calls to action and should be used sparingly. Secondary buttons are used for less important, secondary actions on a page.</p>
+
+      <section>
+        <h4>Regular/Standard Buttons </h4>
+        <p>Regular/Standard size buttons can be adjusted with the <code>.tiny</code>, <code>.small</code>, and <code>.large</code> classes.</p>
+        <div class="btn-cont">
+          <a href="#" class="primary button">Primary button</a>
+          <a href="#" class="secondary button">Secondary button</a>
+          <a href="#" class="tertiary button">Tertiary button</a>
+        </div>
+      </section>
+
+      <section>
+        <h4> Alternate Sized Buttons </h4>
+        <a href="#" class="primary tiny button">Tiny button</a>
+        <a href="#" class="primary small button">Small button</a>
+        <a href="#" class="primary large button">Large button</a>
+        
+        <div class="grid-x">
+          <div class="medium-6 cell">
+            <a class="button expanded" href="#">Expanded Button to Parent Container (medium-6)</a>
+          </div>
+        </div>
+        <div class="btn-cont">
+          <button class="hollow button primary" href="#">Primary Hollow</button>
+          <button class="hollow button secondary" href="#">Secondary Hollow</button>
+          <button class="hollow button tertiary" href="#">Tertiary Hollow</button>
+        </div>
+      </section>
+
+      <h4> Button Groups </h4>
+
+      <div class="button-group">
+        <a class="button">One</a>
+        <a class="button">Two</a>
+        <a class="button">Three</a>
+      </div>
+
+
+<section><pre><code>&lt;a href="#" class="primary button">Primary button&lt;/a&gt;
+&lt;a href="#" class="secondary button"&gt;Secondary button&lt;/a&gt;
+&lt;a href="#" class="tertiary button"&gt;Tertiary button&lt;/a&gt;
+
+&lt;a href="#" class="primary large button"&gt;Large button&lt;/a&gt;
+&lt;a href="#" class="primary small button"&gt;Small button&lt;/a&gt;
+&lt;a href="#" class="primary tiny button"&gt;Tiny button&lt;/a&gt;
+
+&lt;div class="grid-x"&gt;
+  &lt;div class="medium-6 cell"&gt;
+    &lt;a class="button expanded" href="#"&gt;Expanded Button to Parent Container (medium-6)&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;button class="hollow button primary" href="#"&gt;Primary Hollow&lt;/button&gt;
+&lt;button class="hollow button secondary" href="#"&gt;Secondary Hollow&lt;/button&gt;
+&lt;button class="hollow button tertiary" href="#"&gt;Tertiary Hollow&lt;/button&gt;
+
+&lt;div class="button-group"&gt;
+  &lt;a class="button"&gt;One&lt;/a&gt;
+  &lt;a class="button"&gt;Two&lt;/a&gt;
+  &lt;a class="button"&gt;Three&lt;/a&gt;
+&lt;/div&gt;
+</code></pre></section>
+
+      <h4> Button Containers </h4>
+      <p>Button containers serve the purpose of providing adaquate touch points and spacing when stacked in a small viewport size.</p> 
+      <!-- Buttons Float Left -->
+      <div class="grid-x">
+        <div class="medium-6 cell">
+          <h5>Button Container (float left) </h5>
+          <div class="btn-cont">
+            <a href="#" class="primary button">Primary button</a>
+            <a href="#" class="secondary button">Secondary button</a>
+            <a href="#" class="tertiary button">Tertiary button</a> 
+          </div>
+        </div>
+
+      <!-- Buttons Float Right -->
+
+        <div class="medium-6 cell">
+          <h5>Button Container Alt (float right)</h5>
+          <div class="btn-cont-alt">
+            <a href="#" class="primary button">Primary button</a>
+            <a href="#" class="secondary button">Secondary button</a>
+            <a href="#" class="tertiary button">Tertiary button</a>
+          </div>
+        </div>
+      </div>
+
+
+<section><pre><code>&lt;!-- Buttons Float Left --&gt;
+&lt;div class="btn-cont"&gt;
+  &lt;a href="#" class="primary button"&gt;Primary button&lt;/a&gt;
+  &lt;a href="#" class="secondary button"&gt;Secondary button&lt;/a&gt;
+  &lt;a href="#" class="tertiary button"&gt;Tertiary button&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- Buttons Float Right --&gt;
+&lt;div class="btn-cont-alt"&gt;
+  &lt;a href="#" class="primary button"&gt;Primary button&lt;/a&gt;
+  &lt;a href="#" class="secondary button"&gt;Secondary button&lt;/a&gt;
+  &lt;a href="#" class="tertiary button"&gt;Tertiary button&lt;/a&gt;
+&lt;/div&gt;
+</code></pre></section>
+
+
+
+      <div id="forms" data-magellan-target="forms" class="anchor"></div>
+
+      <h2> Forms </h2>
+
+      <a name="forms" class="anchor"></a>
+
+      <p class="lead">Use forms to allow users to interact with the site and provide information to post to the db.</p>
+
+      <h4> Elements of a Form </h4>
+
+      A form should be marked up using its default HTML properties. The ones we make use of include (in hierarchical order):
+  <pre>
+  - Form
+  - Label
+  - Input
+  - Select
+  - Text area
+  - Button
+  </pre>
+
+      <h4> How to Use </h4>
+
+      <p>Make forms great and easy to use with the following rules:</p>
+      <ul>
+        <li> Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.</li>
+        <li> Series of checkboxes and radio buttons below within a: 
+          <code>&lt;ul class="inline-list"&gt;</code>
+        </li>
+        <li>Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).</li>
+      </ul>
+
+      <h4> Form Layouts </h4>
+
+      <p>Form elements in Foundation are styled based on their type attribute rather than a class. Inputs in Foundation have another major advantage - they are full width by default. That means that inputs will run as wide as the column that contains them. However, you have two options which make these forms extremely versatile:</p>
+      <ul>
+        <li> You can size inputs using column sizes, like <code>.medium-6</code>, <code>.small-6</code>.</li>
+        <li>You can create row elements inside your form and use columns for the form, including inputs, labels and more. Rows inside a form inherit some special padding to even up input spacing.</li>
+      </ul>
+
+
+      <h4> Form Example </h4>
+      <p>Form inputs are highlighted when focused for usability and accessibility (WCAG &amp; Sec 508).</p>
+      <p>Required Fields<span class="required"></span> are marked with a red asterisk. Simply add the class `required` to the label to mark the field as required.</p>
+      <form>
+        <section class="grid-x grid-margin-x">
+          <div class="medium-4 large-3 cell">
+            <label class="required">Required Label</label>
+            <input type="text" placeholder="standard input">
+          </div>
+          <div class="medium-4 large-3 cell">
+            <label class="required">Required Label</label>
+            <div class="input-group">
+              <span class="input-group-label">$</span>
+              <input class="input-group-field" type="text" placeholder="input with left icon">
+            </div>
+          </div>
+          <div class="medium-4 large-3 cell">
+            <label>Label</label>
+            <div class="input-group">
+              <input class="input-group-field" type="text" placeholder="input with right extension">
+              <span class="input-group-label">.com</span>
+            </div>
+          </div>
+          <div class="medium-4 large-3 cell">
+            <label>Select Box</label>
+            <select>
+              <option value="good">Good</option>
+              <option value="better">Better</option>
+              <option value="best">Best</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="grid-x grid-margin-x">
+          <div class="medium-4 cell">
+            <label>Choose Your Favorite</label>
+            <input type="radio" name="radio1" value="radio1" id="radio1"><label for="radio1">Red</label>
+            <input type="radio" name="radio2" value="radio2" id="radio2"><label for="radio2">Blue</label>
+          </div>
+          <div class="medium-4 cell">
+            <label>Check these out</label>
+            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+          </div>
+        </section>
+        <section class="grid-x">
+          <div class="large-8 columns">
+            <label>Textarea Label</label>
+            <textarea placeholder="placeholder - Text area does NOT expand beyond the parent container"></textarea>
+          </div>
+        </section>
+      </form>
+
+<section><pre><code>&lt;form&gt;
+  &lt;div class="grid-x grid-margin-x"&gt;
+    &lt;div class="medium-4 large-3 cell"&gt;
+      &lt;label&gt;Label&lt;/label&gt;
+      &lt;input type="text" placeholder="standard input"&gt;
+    &lt;/div&gt;
+    &lt;div class="medium-4 large-3 cell"&gt;
+      &lt;label&gt;Label&lt;/label&gt;
+      &lt;div class="input-group"&gt;
+        &lt;span class="input-group-label"&gt;$&lt;/span&gt;
+        &lt;input class="input-group-field" type="text" placeholder="input with left icon"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="medium-4 large-3 cell"&gt;
+      &lt;label&gt;Label&lt;/label&gt;
+      &lt;div class="input-group"&gt;
+        &lt;input class="input-group-field" type="text" placeholder="input with right extension"&gt;
+        &lt;span class="input-group-label"&gt;.com&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="medium-4 large-3 cell"&gt;
+      &lt;label&gt;Select Box&lt;/label&gt;
+      &lt;select&gt;
+        &lt;option value="good"&gt;Good&lt;/option&gt;
+        &lt;option value="better"&gt;Better&lt;/option&gt;
+        &lt;option value="best"&gt;Best&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid-x"&gt;
+    &lt;div class="medium-4 cell"&gt;
+      &lt;label&gt;Choose Your Favorite&lt;/label&gt;
+      &lt;input type="radio" name="radio1" value="radio1" id="radio1"&gt;&lt;label for="radio1"&gt;Red&lt;/label&gt;
+      &lt;input type="radio" name="radio2" value="radio2" id="radio2"&gt;&lt;label for="radio2"&gt;Blue&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="medium-4 cell"&gt;
+      &lt;label&gt;Check these out&lt;/label&gt;
+      &lt;input id="checkbox1" type="checkbox"&gt;&lt;label for="checkbox1"&gt;Checkbox 1&lt;/label&gt;
+      &lt;input id="checkbox2" type="checkbox"&gt;&lt;label for="checkbox2"&gt;Checkbox 2&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid-x"&gt;
+    &lt;div class="large-8 columns"&gt;
+      &lt;label&gt;Textarea Label&lt;/label&gt;
+      &lt;textarea placeholder="placeholder - Text area does NOT expand beyond the parent container"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre></section>
+
+
+
+      <div id="tables" data-magellan-target="tables" class="anchor"></div>
+
+      <h2> Tables </h2>
+      <p class="lead">Useful for displaying tabular data.</p>
+      <table>
+        <thead>
+          <tr>
+            <th width="200">Table Header</th>
+            <th>Table Header</th>
+            <th width="150">Table Header</th>
+            <th width="150">Table Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+<section><pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th width="200"&gt;Table Header&lt;/th&gt;
+      &lt;th&gt;Table Header&lt;/th&gt;
+      &lt;th width="150"&gt;Table Header&lt;/th&gt;
+      &lt;th width="150"&gt;Table Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Goes Here&lt;/td&gt;
+      &lt;td&gt;This is longer content Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+      &lt;td&gt;Content Goes Here&lt;/td&gt;
+      &lt;td&gt;Content Goes Here&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Goes Here&lt;/td&gt;
+      &lt;td&gt;This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+      &lt;td&gt;Content Goes Here&lt;/td&gt;
+      &lt;td&gt;Content Goes Here&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Goes Here&lt;/td&gt;
+      &lt;td&gt;This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.&lt;/td&gt;
+      &lt;td&gt;Content Goes Here&lt;/td&gt;
+      &lt;td&gt;Content Goes Here&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre></section>
+
+
+
+      <div id="tooltips" data-magellan-target="tooltips" class="anchor"></div>
+
+      <h2> Tooltips </h2>
+      <p class="lead">A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element.</p>
+      <p>The <span data-tooltip aria-haspopup="true" class="has-tip" data-position="top" tabindex="1" title="Sheikah are a humanoid race, bearing great resemblance to Hylians in both appearance and magical capacity."> Sheikah</span> were originally chosen by the Goddess Hylia to serve as guardians, and have been highly devoted to the Royal Family of Hyrule.</p> 
+
+      <p>Field Tooltip Example <span data-tooltip aria-haspopup="true" class="info-tooltip" data-position="top" tabindex="1" title="Example of tooltip for a label."></span></p>
+
+
+<section><pre><code>The 
+  &lt;span data-tooltip aria-haspopup="true" 
+    class="has-tip" 
+    tabindex="1" 
+    title="Sheikah are a humanoid race, bearing great resemblance to Hylians in both appearance and magical capacity."&gt; 
+    Sheikah
+  &lt;/span&gt; 
+  were originally chosen by the Goddess Hylia to serve as guardians, and have been highly devoted to the Royal Family of Hyrule.
+
+&lt;p&gt;Field Tooltip Example 
+  &lt;span data-tooltip 
+    aria-haspopup="true" 
+    class="info-tooltip" 
+    data-position="top" 
+    tabindex="1" 
+    title="Example of tooltip for a label."&gt;
+  &lt;/span&gt;
+&lt;/p&gt;
+</code></pre></section>
+
+
+
+      <div id="charts" data-magellan-target="charts" class="anchor"></div>
+
+      <h2> Charts &amp; Mapping </h2>
+
+      <p class="lead">Highcharts is an SVG-based, fully customizable, interactive, mobile-optimized charting library for use in our applications.</p>
+
+      Highcharts API: <a href="https://api.highcharts.com/highcharts/" target="_blank">https://api.highcharts.com/highcharts/</a><br><br>
+
+
+
+
+      <div id="modals" data-magellan-target="modals" class="anchor"></div>
+
+      <h2> Modals <small>(Reveal)</small> </h2>
+      <p class="lead">Our modals will have a standard fade-in and slide-down/up animation. The size of the modal will depend upon the required amount of content.</p>
+
+      <p>The size of a modal can be changed with these sizing classes, which are added to the modal container:</p>
+      <ul>
+        <li><code>.tiny</code>: 30% wide</li>
+        <li><code>.small</code>: 50% wide</li>
+        <li><code>.large</code>: 90% wide</li>
+        <li><code>.full</code>: 100% width and height, defaults the escClose option to true, as well as creates a close button.</li>
+      </ul>
+      <p><br>
+        <button class="button" data-open="modalTest">Click me for a modal</button>
+      </p>
+      <!-- Modal -->
+        <div class="reveal" id="modalTest" data-reveal data-close-on-click="true" data-animation-in="slide-in-down fast" data-animation-out="slide-out-up fast">
+          <h5>My Modal Title</h5>
+          <hr>
+          <p>This is the body of our default sized modal. Yeah.</p><br>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <button class="button small primary float-right" data-close aria-label="Close modal" type="button">Close</button>
+        </div> 
+
+<section><pre><code>&lt;p&gt;
+  &lt;button class="button" data-open="modalTest"&gt;Click me for a modal&lt;/button&gt;
+&lt;/p&gt;
+  &lt;div class="tiny reveal" 
+    id="modalTest" 
+    data-reveal 
+    data-close-on-click="true" 
+    data-animation-in="slide-in-down fast" 
+    data-animation-out="slide-out-up fast"&gt;
+    &lt;h5&gt;My Modal Title&lt;/h5&gt;
+    &lt;hr&gt;
+    &lt;p&gt;This is the body of our default sized modal. Yeah.&lt;/p&gt;&lt;br&gt;
+    &lt;button class="close-button" data-close aria-label="Close modal" type="button"&gt;
+      &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class="button small primary float-right" data-close aria-label="Close modal" type="button"&gt;Close&lt;/button&gt;
+  &lt;/div&gt; 
+</code></pre></section>
+
+      <div id="tabs" data-magellan-target="tabs" class="anchor"></div>
+      <h2> Tabs </h2>
+
+      <section>
+        <div class="grid-x">
+          <div class="small-12">
+            <ul class="tabs" data-tabs id="example-tabs">
+              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+              <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+              <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="example-tabs">
+              <div class="tabs-panel is-active" id="panel1">
+                <p>One</p>
+                <p>Check me out! I'm a super cool Tab panel with text content!</p>
+              </div>
+              <div class="tabs-panel" id="panel2">
+                <p>Two</p>
+                <img data-src="holder.js/300x100?bg=03629F">
+              </div>
+              <div class="tabs-panel" id="panel3">
+                <p>Three</p>
+                <p>Check me out! I'm a super cool Tab panel with text content!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+<section><pre><code>&lt;div class="grid-x"&gt;
+  &lt;div class="small-12"&gt;
+    &lt;ul class="tabs" data-tabs id="example-tabs"&gt;
+      &lt;li class="tabs-title is-active"&gt;&lt;a href="#panel1" aria-selected="true"&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="tabs-title"&gt;&lt;a href="#panel2"&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="tabs-title"&gt;&lt;a href="#panel3"&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="tabs-content" data-tabs-content="example-tabs"&gt;
+      &lt;div class="tabs-panel is-active" id="panel1"&gt;
+        &lt;p&gt;One&lt;/p&gt;
+        &lt;p&gt;Check me out! I'm a super cool Tab panel with text content!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="tabs-panel" id="panel2"&gt;
+        &lt;p&gt;Two&lt;/p&gt;
+        &lt;img data-src="holder.js/300x100?bg=03629F"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabs-panel" id="panel3"&gt;
+        &lt;p&gt;Three&lt;/p&gt;
+        &lt;p&gt;Check me out! I'm a super cool Tab panel with text content!&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></section>
+
+
+
+      <div id="accordions" data-magellan-target="accordions" class="anchor"></div>
+
+      <h2> Accordions </h2>
+
+      <p class="lead">Accordions are elements that help you organize and navigate multiple documents in a single container. They can be used for switching between items in the container.</p>
+
+      <div class="grid-x">
+        <div class="medium-7 large-5">
+          <ul class="accordion" data-accordion data-allow-all-closed="true">
+            <li class="accordion-item is-active" data-accordion-item>
+              <a href="#" class="accordion-title">Accordion 1</a>
+              <div class="accordion-content" data-tab-content >
+                <p>Panel 1. Lorem ipsum dolor</p>
+                <a href="#">Nowhere to Go</a>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">Accordion 2</a>
+              <div class="accordion-content" data-tab-content>
+                <textarea></textarea>
+                <button class="button">I do nothing!</button>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">Accordion 3</a>
+              <div class="accordion-content" data-tab-content>
+                Type your name!
+                <input type="text"></input>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+<section><pre><code>&lt;ul class="accordion" data-accordion data-allow-all-closed="true"&gt;
+  &lt;li class="accordion-item is-active" data-accordion-item&gt;
+    &lt;a href="#" class="accordion-title"&gt;Accordion 1&lt;/a&gt;
+    &lt;div class="accordion-content" data-tab-content &gt;
+      &lt;p&gt;Panel 1. Lorem ipsum dolor&lt;/p&gt;
+      &lt;a href="#"&gt;Nowhere to Go&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="accordion-item" data-accordion-item&gt;
+    &lt;a href="#" class="accordion-title"&gt;Accordion 2&lt;/a&gt;
+    &lt;div class="accordion-content" data-tab-content&gt;
+      &lt;textarea&gt;&lt;/textarea&gt;
+      &lt;button class="button"&gt;I do nothing!&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="accordion-item" data-accordion-item&gt;
+    &lt;a href="#" class="accordion-title"&gt;Accordion 3&lt;/a&gt;
+    &lt;div class="accordion-content" data-tab-content&gt;
+      Type your name!
+      &lt;input type="text"&gt;&lt;/input&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></section>
+
+      <section>
+        <div id="iconography" data-magellan-target="iconography" class="anchor"></div>
+
+        <h2> Iconography </h2>
+
+        <p class="lead">QTS uses a combination of Font Awesome and a custom icon set called 'Font QTS'. Font Awesome and Font QTS is all the power of SVG without all the hassle. Performant JS automatically replaces HTML markup (i.e. - <code> &lt;i class="fqts fa-icon-name-here"&gt;&lt;/i&gt;</code>) with an inline SVG. See the <a href="./font-qts/index.html">Font QTS page</a> for usage info.</p>
+
+        <ul>
+          <li><a href="./font-qts/index.html"><i class="fqts fa-file-alt fa-fw"></i> Font QTS</a></li>
+          <li><a href="https://fontawesome.com/icons?d=gallery" target="_blank"><i class="fqts fa-file-alt fa-fw"></i> Font Awesome </a></li>
+        </ul>
+      </section>
+
+      <section>
+        <div id="badges" data-magellan-target="badges" class="anchor"></div>
+        <h2> Badges </h2>
+        <p class="lead">Badges are a basic component that usually displays a number. It's useful for calling out a number of items to act on and/or read.</p>
+
+        <div class="fa-3x">
+          <span class="fa-layers fa-fw">
+            <i class="fqts fa-file-alt"></i>
+            <span class="fa-layers-counter">20</span>
+          </span>
+        </div>
+
+        <span class="badge primary">1</span>
+        <span class="badge secondary">2</span>
+        <span class="badge tertiary">3</span>
+        <span class="badge success">A</span>
+        <span class="badge warning">B</span>
+        <span class="badge alert">C</span>
+         
+      </section>
+
+<section><pre><code>&lt;!-- For use with Font QTS icon using fa-layers technique - code below --&gt;
+&lt;h1&gt;
+  &lt;span class="fa-layers fa-fw"&gt;
+    &lt;i class="fqts fa-file-alt"&gt;&lt;/i&gt;
+    &lt;span class="badge alert"&gt;20&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/h1&gt;
+
+&lt;!-- Standalone Foundation 6 Badges --&gt;
+&lt;span class="badge primary"&gt;1&lt;/span&gt;
+&lt;span class="badge secondary"&gt;2&lt;/span&gt;
+&lt;span class="badge tertiary"&gt;3&lt;/span&gt;
+&lt;span class="badge success"&gt;A&lt;/span&gt;
+&lt;span class="badge warning"&gt;B&lt;/span&gt;
+&lt;span class="badge alert"&gt;C&lt;/span&gt;
+</code></pre></section>
+
+
+      <div id="callouts" data-magellan-target="callouts" class="anchor"></div>
+      <h2> Callouts </h2>
+      <p>A callout is just an element with a <code>.callout</code> class applied. You can put any kind of content inside. Callouts have a border, padding, and margin bottom.</p>
+      <p>Callouts can be colored using the <code>.secondary</code>, <code>.primary</code>, <code>.success</code>, <code>.warning</code>, or <code>.alert</code> classes. Links inside the callout will be tinted to match the color of the callout. The background color of the callouts are lighter shades of the Foundation color palette in order for text to be readable and have a good contrast ratio.</p>
+      <p>If no color class is used, the background will match the <code>$white</code> variable.</p>
+      
+      <div class="primary callout" data-closable>
+        <h5>This is a primary callout that is closeable</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="success callout" data-closable="hinge-out-from-top">
+        <h5>This is a success callout that is closeable with animation</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="warning callout">
+        <h5>This is a warning callout</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+
+      <div class="alert callout">
+        <h5>This is an alert callout</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+
+
+
+<section><pre><code>&lt;div class="primary callout" data-closable&gt;
+  &lt;h5&gt;This is a primary callout that is closeable&lt;/h5&gt;
+  &lt;p&gt;It has an easy to override visual style, and is appropriately subdued.&lt;/p&gt;
+  &lt;a href="#"&gt;It's dangerous to go alone, take this.&lt;/a&gt;
+  &lt;button class="close-button" aria-label="Dismiss alert" type="button" data-close&gt;
+    &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="success callout" data-closable="hinge-out-from-top"&gt;
+  &lt;h5&gt;This is a success callout that is closeable with animation&lt;/h5&gt;
+  &lt;p&gt;It has an easy to override visual style, and is appropriately subdued.&lt;/p&gt;
+  &lt;a href="#"&gt;It's dangerous to go alone, take this.&lt;/a&gt;
+  &lt;button class="close-button" aria-label="Dismiss alert" type="button" data-close&gt;
+    &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="warning callout"&gt;
+  &lt;h5&gt;This is a warning callout&lt;/h5&gt;
+  &lt;p&gt;It has an easy to override visual style, and is appropriately subdued.&lt;/p&gt;
+  &lt;a href="#"&gt;It's dangerous to go alone, take this.&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="alert callout"&gt;
+  &lt;h5&gt;This is an alert callout&lt;/h5&gt;
+  &lt;p&gt;It has an easy to override visual style, and is appropriately subdued.&lt;/p&gt;
+  &lt;a href="#"&gt;It's dangerous to go alone, take this.&lt;/a&gt;
+&lt;/div&gt;
+</code></pre></section>
+
+      <div id="cards" data-magellan-target="cards" class="anchor"></div>
+      <h2> Cards </h2>
+      <div class="grid-x grid-margin-x">
+        <div class="medium-3 cell">
+          <div class="card">
+            <div class="card-divider">
+              This is a header
+            </div>
+            <div class="card-image">
+              <img data-src="holder.js/300x100?bg=03629F">
+            </div>
+            <div class="card-section">
+              <h4>This is a card.</h4>
+              <p>It has an easy to override visual style, and is appropriately subdued.</p>
+            </div>
+          </div>
+        </div>
+        <div class="medium-3 cell">
+          <div class="card">
+            <div class="card-divider">
+              This is a header
+            </div>
+            <div class="card-image">
+              <img data-src="holder.js/300x100?bg=03629F">
+            </div>
+            <div class="card-section">
+              <h4>This is a card.</h4>
+              <p>It has an easy to override visual style, and is appropriately subdued.</p>
+            </div>
+          </div>
+        </div>
+        <div class="medium-3 cell">
+          <div class="card">
+            <div class="card-divider">
+              This is a header
+            </div>
+            <div class="card-image">
+              <img data-src="holder.js/300x100?bg=03629F">
+            </div>
+            <div class="card-section">
+              <h4>This is a card.</h4>
+              <p>It has an easy to override visual style, and is appropriately subdued.</p>
+            </div>
+          </div>
+        </div>
+        <div class="medium-3 cell">
+          <div class="card">
+            <div class="card-divider">
+              This is a header
+            </div>
+            <div class="card-image">
+              <img data-src="holder.js/300x100?bg=03629F">
+            </div>
+            <div class="card-section">
+              <h4>This is a card.</h4>
+              <p>It has an easy to override visual style, and is appropriately subdued.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!--/grid -->
+
+
+<section><pre><code>&lt;div class="medium-3 cell"&gt;
+  &lt;div class="card"&gt;
+    &lt;div class="card-divider"&gt;
+      This is a header
+    &lt;/div&gt;
+    &lt;div class="card-image"&gt;
+      &lt;img data-src="holder.js/300x100?bg=03629F"&gt;
+    &lt;/div&gt;
+    &lt;div class="card-section"&gt;
+      &lt;h4&gt;This is a card.&lt;/h4&gt;
+      &lt;p&gt;It has an easy to override visual style, and is appropriately subdued.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></section>
+
+
+      <div id="sliders" data-magellan-target="sliders" class="anchor"></div>
+      <h2> Sliders </h2>
+      <p class="lead">Sliders widths are restricted by the parent container width/column.</p>
+      <div class="grid-x grid-margin-x">
+        <div class="medium-5 cell">
+          <h4>Standard Slider</h4>
+          <div class="slider" data-slider data-initial-start="50" data-end="200">
+            <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+            <span class="slider-fill" data-slider-fill></span>
+            <input type="hidden">
+          </div>
+        </div><!-- /cell -->
+        <div class="medium-5 cell">
+          <h4>Slider w/ Data Binding</h4>
+          <div class="slider" data-slider data-initial-start="50">
+            <span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"></span>
+            <span class="slider-fill" data-slider-fill></span>
+          </div>
+        </div>
+          <div class="medium-2 large-1 cell">
+            <h4>&nbsp;</h4>
+            <input type="number" id="sliderOutput1">
+          </div>
+        </div>
+      </div>
+
+<section><pre><code>&lt;div class="grid-x grid-margin-x"&gt;
+  &lt;div class="medium-5 cell"&gt;
+    &lt;h4&gt;Standard Slider&lt;/h4&gt;
+    &lt;div class="slider" data-slider data-initial-start="50" data-end="200"&gt;
+      &lt;span class="slider-handle"  data-slider-handle role="slider" tabindex="1"&gt;&lt;/span&gt;
+      &lt;span class="slider-fill" data-slider-fill&gt;&lt;/span&gt;
+      &lt;input type="hidden"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- /cell --&gt;
+  &lt;div class="medium-5 cell"&gt;
+    &lt;h4&gt;Slider w/ Data Binding&lt;/h4&gt;
+    &lt;div class="slider" data-slider data-initial-start="50"&gt;
+      &lt;span class="slider-handle"  data-slider-handle role="slider" tabindex="1" aria-controls="sliderOutput1"&gt;&lt;/span&gt;
+      &lt;span class="slider-fill" data-slider-fill&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;div class="medium-2 large-1 cell"&gt;
+      &lt;h4&gt;&nbsp;&lt;/h4&gt;
+      &lt;input type="number" id="sliderOutput1"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></section>
+
+
+      <div id="switches" data-magellan-target="switches" class="anchor"></div>
+      <h2> Switches </h2>
+      <p>Add the <code>.switch</code> class to an element to create a switch. Inside the switch, add an <code> &lt;input type="checkbox"&gt;</code> with the class <code>.switch-input</code>. Next to that, create a <code>&lt;label&gt;</code> with the class <code>.switch-paddle</code>.</p>
+
+      <p>Give the <code>&lt;input&gt;</code> a unique ID and point the <code>&lt;label&gt;</code> to it with the for attribute. This makes the switch clickable.</p>
+
+      <div class="switch">
+        <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="exampleSwitch">
+          <span class="show-for-sr">Download Kittens</span>
+        </label>
+      </div>
+
+      <div class="switch tiny">
+        <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="tinySwitch">
+          <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+        </label>
+      </div>
+
+      <div class="switch small">
+        <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="smallSwitch">
+          <span class="show-for-sr">Small Portions Only</span>
+        </label>
+      </div>
+
+      <div class="switch large">
+        <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="largeSwitch">
+          <span class="show-for-sr">Show Large Elephants</span>
+        </label>
+      </div>
+
+
+<section><pre><code>&lt;div class="switch"&gt;
+  &lt;input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch"&gt;
+  &lt;label class="switch-paddle" for="exampleSwitch"&gt;
+    &lt;span class="show-for-sr"&gt;Download Kittens&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class="switch tiny"&gt;
+  &lt;input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch"&gt;
+  &lt;label class="switch-paddle" for="tinySwitch"&gt;
+    &lt;span class="show-for-sr"&gt;Tiny Sandwiches Enabled&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class="switch small"&gt;
+  &lt;input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch"&gt;
+  &lt;label class="switch-paddle" for="smallSwitch"&gt;
+    &lt;span class="show-for-sr"&gt;Small Portions Only&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class="switch large"&gt;
+  &lt;input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch"&gt;
+  &lt;label class="switch-paddle" for="largeSwitch"&gt;
+    &lt;span class="show-for-sr"&gt;Show Large Elephants&lt;/span&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre></section> 
+
+
+      <div id="pagination" data-magellan-target="pagination" class="anchor"></div>
+      <h2> Pagination </h2>
+      <p>A pagination list is just a <code>&lt;ul&gt;</code> with the class .pagination, and a series of <code>&lt;li&gt;/&lt;a&gt;</code> pairs. Add the class .current to an <code>&lt;li&gt;</code> to mark the current page, or .disabled to add disabled styles to a link.</p><br>
+
+      <ul class="pagination" role="navigation" aria-label="Pagination">
+        <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="ellipsis" aria-hidden="true"></li>
+        <li><a href="#" aria-label="Page 12">12</a></li>
+        <li><a href="#" aria-label="Page 13">13</a></li>
+        <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+      </ul><br>
+
+<section><pre><code>&lt;ul class="pagination" role="navigation" aria-label="Pagination"&gt;
+  &lt;li class="pagination-previous disabled"&gt;Previous &lt;span class="show-for-sr"&gt;page&lt;/span&gt;&lt;/li&gt;
+  &lt;li class="current"&gt;&lt;span class="show-for-sr"&gt;You're on page&lt;/span&gt; 1&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Page 2"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="ellipsis" aria-hidden="true"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Page 12"&gt;12&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" aria-label="Page 13"&gt;13&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="pagination-next"&gt;&lt;a href="#" aria-label="Next page"&gt;Next &lt;span class="show-for-sr"&gt;page&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></section>
+
+
+      <div id="helperclasses" data-magellan-target="helperclasses" class="anchor"></div>
+      <h2> Helper Classes </h2>
+      <a name="helper" class="anchor"></a>
+      <p class="lead">Helper classes <strong>should be used sparingly</strong> since they are pretty much the equivalent to an inline style. It is recommended to use helper classes in reusable global modules/components.</p>
+      <h4> Float Classes </h4>
+      <p>You can change the float behavior of an element by adding the <code>.float-left</code> or <code>.float-right</code> classes to an element. To clear floats, add the class <code>.clearfix</code> to the parent element.</p>
+      <div class="clearfix">
+        <a class="button float-left">Floated Left</a>
+        <a class="button float-right">Floated Right</a>
+      </div><br>
+      <h4> Text Alignment </h4>
+      <p>You can change the text alignment of an element by adding <code>.text-left</code>, <code>.text-right</code>, <code>.text-center</code> or <code>.text-justify</code> to an element.</p><br>
+
+
+<section><pre><code>&lt;!-- Float Classes --&gt;
+&lt;div class="clearfix"&gt;
+  &lt;a class="button float-left"&gt;Floated Left&lt;/a&gt;
+  &lt;a class="button float-right"&gt;Floated Right&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;!-- Text Alignment --&gt;
+&lt;p class="text-left"&gt;&lt;!-- ... --&gt;&lt;/p&gt;
+&lt;p class="text-right"&gt;&lt;!-- ... --&gt;&lt;/p&gt;
+&lt;p class="text-center"&gt;&lt;!-- ... --&gt;&lt;/p&gt;
+&lt;p class="text-justify"&gt;&lt;!-- ... --&gt;&lt;/p&gt;
+</code></pre></section>
+
+      <h4> Stats </h4>
+      <p>Display some important numbers real big. Just add the <code>.stat</code> class to any element to amp up the font size.</p>
+      <p>Days without a merge conflict</p>
+      <div class="stat">128</div>
+
+      <div id="bottomSticky"></div>
+    </div>
+  </div>
+</div>
+
+                </div><!-- /cell -->
+              </div><!-- /grid-x -->
+            </main><!-- /main grid-container -->    </div>
+    
+        <footer>
+          <div class="grid-container-fluid">
+            <div class="grid-x grid-padding-x">
+              <div class="small-12 cell">
+                <p>Copyright &copy; 
+                    <script type="text/javascript">
+                        today=new Date();
+                        year0=today.getFullYear();
+                        document.write(year0);
+                    </script> 
+                    QTS. All rights reserved. </p>
+              </div>
+            </div>
+          </div>
+        </footer>    
+    <script src="/assets/js/scripts.min.js"></script>
+    <script src="/assets/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/assets/js/holder.js"></script>
+  </body>
+</html>

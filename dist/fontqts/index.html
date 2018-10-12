@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <title>
+        Font QTS | 
+      QTS Style Guide
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link rel="stylesheet" href="/assets/css/styles/atom-one-light.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=zXbBrdGllj">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=zXbBrdGllj">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=zXbBrdGllj">
+    <link rel="manifest" href="/site.webmanifest?v=zXbBrdGllj">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=zXbBrdGllj" color="#03629f">
+    <link rel="shortcut icon" href="/favicon.ico?v=zXbBrdGllj">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#03629f">
+    <style>
+      /* This styles the color blocks used in the color documentation. */
+      .color-block {
+        border-radius: 2px;
+        display: block;
+        padding: 8px 8px 6px;
+        color: #333;
+        border: 1px solid #ddd;
+      }
+        .color-swatch {
+          display: block;
+          width: 100%;
+          height: 100px;
+          margin-bottom: 0.42857rem;
+        }
+        .sticky .vertical.menu .is-active {
+          font-weight: bold;
+          background: rgb(236, 238, 239);
+        }
+      </style>
+  </head>
+    <body id="fontqts">
+    
+    <div class="grid-container-fluid">
+      <div class="grid-x">
+        <div class="small-12 cell">
+          <span #top></span>
+          <header class="top-bar">
+            <div class="top-bar-left">
+              <div class="hamburger hide-for-medium" data-toggle="offCanvasMenu" aria-controls="offCanvasMenu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </div>
+              <a href="/" title="Style Guide Home">
+                <div class="mainlogo">
+                </div>
+                <div class="appTitle">
+                  QTS Style Guide
+                </div>
+              </a>
+            </div>
+            <nav class="top-bar-right hide-for-small-only">
+              <ul class="menu">
+                <li>
+                  <a href="/fontqts">Font QTS</a>
+                </li>
+                <li>
+                  <a href="/palette">Color Palette</a>
+                </li>
+              </ul>
+            </nav>
+            
+            <nav class="off-canvas position-left" id="offCanvasMenu" aria-hidden="true" data-off-canvas> 
+              <ul class="menu vertical" data-magellan>
+                <li class="main-title">Main Menu</li>
+                <li><a href="/fontqts" data-close>Font QTS</a></li>
+                <li><a href="/palette" data-close>Color Palette</a></li> 
+                <li><hr></li>
+                <li class="title">TOC</li>
+                <li><a href="#grid" data-close>Grid Layout</a></li>
+                <li><a href="#colors" data-close>Color Palette</a></li>
+                <li><a href="#typography" data-close>Typography</a></li>
+                <li><a href="#buttons" data-close>Buttons</a></li>
+                <li><a href="#forms" data-close>Forms</a></li>
+                <li><a href="#tables" data-close>Tables</a></li>
+                <li><a href="#tooltips" data-close>Tooltips</a></li>
+                <li><a href="#charts" data-close>Charts &amp; Maps</a></li>
+                <li><a href="#modals" data-close>Modals</a></li>
+                <li><a href="#tabs" data-close>Tabs</a></li>
+                <li><a href="#accordions" data-close>Accordions</a></li>
+                <li><a href="#iconography" data-close>Iconography</a></li>
+                <li><a href="#badges" data-close>Badges</a></li>
+                <li><a href="#callouts" data-close>Callouts</a></li>
+                <li><a href="#cards" data-close>Cards</a></li>
+                <li><a href="#sliders" data-close>Sliders</a></li>
+                <li><a href="#switches" data-close>Switches</a></li>
+                <li><a href="#pagination" data-close>Pagination</a></li>
+              </ul>
+              <button class="close-button" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" data-close>
+                <span aria-hidden="true">×</span>
+              </button>
+            </nav>
+          </header>
+        </div><!-- / Parent cell -->
+      </div><!-- /grid-x -->
+    </div><!-- /grid-container-fluid -->
+    
+    <main class="grid-container-fluid">
+      <div class="grid-x">
+        <div class="small-12 cell">
+    
+    <div class="off-canvas-wrapper">
+<section class="grid-x grid-padding-x grid-margin-x">
+  <div class="small-12 cell">
+    <h1>Font QTS</h1>
+    <p>Updated: 10/10/18 &nbsp; - &nbsp; v1.3.0 (Removed Font Awesome Icons due to new ng FA Treeshaking)  &nbsp; &nbsp; <a href="changelog.html">Changelog</a></p>
+    <h5>31 icons <small>- Grid Size: 16</small></h5>  
+    <p><strong>For use in Static HTML Pages</strong>: Easy HTML font tags which automatically convert to inline SVG.</p>
+  </div><!-- /cell -->
+  <div class="small-12 cell">
+    <div class="accordion" data-accordion data-allow-all-closed="true">
+      <div data-accordion-item>
+        <a href="#">See Usage/Code Examples</a><br><br>
+        <div class="accordion-content" data-tab-content>
+          <p class="lead">
+            All icon class names <strong>must start with 'fqts'</strong> (Font QTS), a space, followed by the icon name, then lastly the size and/or animation. See the examples below.
+          </p>
+          <p>
+            For this icon library to work, you must include the following 2 javascript files:<br>
+            <strong>fontawesome.js</strong><br>
+            <strong>font-qts.js</strong>
+          </p>
+          <p>
+            <em>Note: All icons inherit the parent tag/container's style properties (size, color, margins, padding, etc). Sizes range from xs (xtra-small) through 10x.</em>
+          </p>
+
+          <section>
+            <p><i class="fqts fa-train09 fa-xs"></i>
+              &lt;i class="fqts fa-train09 fa-xs"&gt;&lt;/i&gt;<br>
+
+              <i class="fqts fa-train09 fa-sm"></i>
+              &lt;i class="fqts fa-train09 fa-sm"&gt;&lt;/i&gt;<br>
+              
+              <i class="fqts fa-train09 fa-lg"></i>
+              &lt;i class="fqts fa-train09 fa-lg"&gt;&lt;/i&gt;<br>
+              
+              <i class="fqts fa-train09 fa-2x"></i>
+              &lt;i class="fqts fa-train09 fa-2x"&gt;&lt;/i&gt;<br>
+              
+              <i class="fqts fa-train09 fa-3x"></i>
+              &lt;i class="fqts fa-train09 fa-3x"&gt;&lt;/i&gt;<br>
+
+              <i class="fqts fa-train09 fa-4x"></i>
+              &lt;i class="fqts fa-train09 fa-4x"&gt;&lt;/i&gt;<br>
+
+              <i class="fqts fa-train09 fa-5x"></i>
+              &lt;i class="fqts fa-train09 fa-5x"&gt;&lt;/i&gt;<br>
+
+              <i class="fqts fa-train09 fa-6x"></i>
+              &lt;i class="fqts fa-train09 fa-6x"&gt;&lt;/i&gt;<br>
+
+              <i class="fqts fa-train09 fa-7x"></i>
+              &lt;i class="fqts fa-train09 fa-7x"&gt;&lt;/i&gt;<br>
+
+              <i class="fqts fa-train09 fa-10x"></i>
+              &lt;i class="fqts fa-train09 fa-10x"&gt;&lt;/i&gt;<br>
+            </p>
+          </section>
+          <p>
+            <h5>Animated Icons:</h5>
+            &lt;i class="fas fa-train-cross-tracks fa-pulse fa-10x"&gt;&lt;/i&gt; (Note: this is a placeholder for future icons where using an animation would make more sense.)<br>
+          </p>
+        </div><!-- /accordion-content -->
+      </div><!-- /data-accordion-item -->
+    </div><!-- /accordion -->
+  </div><!-- /cell -->
+</section>
+<section class="grid-x grid-padding-x grid-margin-x">
+  <div class="small-12 cell">
+    <p><strong>For use in Angular SPA's</strong>: run <code>yarn add ng-font-qts</code> and see code example in the qts-spa-starterkit: <code>git clone https://github.com/nthompson777/qts-spa-starterkit </code>.</p>
+  </div><!-- /cell -->
+
+  <div class="small-12 cell">
+    <div class="accordion" data-accordion data-allow-all-closed="true">
+      <div data-accordion-item>
+        <a href="#">See Angular Code Examples</a><br><br>
+        <div class="accordion-content" data-tab-content>
+          <p>
+            For Angular Font QTS to work with Treeshaking (only load the icons that you need/use for your app), you must import 'angular-fontawesome':
+          
+<code><pre>import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';</pre></code></p>
+          
+          <p>
+            <em>Note: All icons inherit the parent tag/container's style properties (size, color, margins, padding, etc). Sizes range from xs (xtra-small) through 10x.</em>
+<code><pre>&lt;!-- component.html HTML --&gt;
+&lt;fa-icon [icon]="faTrain01" size="2x" class="color"&gt;&lt;/fa-icon&gt;  &lt;fa-icon [icon]="faTrainTracks02" size="2x"&gt;&lt;/fa-icon&gt;
+</pre></code></p>
+<p><code><pre>// component.ts 
+import { faTrain01, faTrainTracks02 } from 'ng-font-qts/font-qts';
+
+export class HomeComponent implements OnInit {
+  ...
+  faTrain01 = faTrain01;
+  faTrainTracks02 = faTrainTracks02;
+  ...
+}
+</pre></code>
+</p>
+        </div><!-- /accordion-content -->
+      </div><!-- /data-accordion-item -->
+    </div><!-- /accordion -->
+  </div><!-- /cell -->
+</section>
+
+<section class="grid-x grid-padding-x grid-margin-x grid-margin-y">
+  <!-- Font QTS Icons BELOW -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train01 fa-2x"></i><br>
+    fa-train01</h4>
+    Unicode value: e905<br>
+    Angular icon: faTrain01
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train02 fa-2x"></i><br> 
+    fa-train02</h4>
+    Unicode value: e906<br>
+    Angular icon: faTrain02
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train03 fa-2x"></i><br> 
+    fa-train03</h4>
+    Unicode value: e907<br>
+    Angular icon: faTrain03
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train04 fa-2x"></i><br> 
+    fa-train04</h4>
+    Unicode value: e908<br>
+    Angular icon: faTrain04
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train05 fa-2x"></i><br> 
+    fa-train05</h4>
+    Unicode value: e90o<br>
+    Angular icon: faTrain05
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train06 fa-2x"></i><br> 
+    fa-train06</h4>
+    Unicode value: e90p<br>
+    Angular icon: faTrain06
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train07 fa-2x"></i><br> 
+    fa-train07</h4>
+    Unicode value: e90q<br>
+    Angular icon: faTrain07
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train08 fa-2x"></i><br> 
+    fa-train08</h4>
+    Unicode value: e90r<br>
+    Angular icon: faTrain08
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train09 fa-2x"></i><br> 
+    fa-train09</h4>
+    Unicode value: e900<br>
+    Angular icon: faTrain09
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train10 fa-2x"></i><br> 
+    fa-train10</h4>
+    Unicode value: e901<br>
+    Angular icon: faTrain10
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-railcar fa-2x"></i><br> 
+    fa-railcar</h4>
+    Unicode value: e902<br>
+    Angular icon: faRailcar
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-railcar02 fa-2x"></i><br> 
+    fa-railcar02</h4>
+    Unicode value: e90h<br>
+    Angular icon: faRailcar02
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-railcar03 fa-2x"></i><br> 
+    fa-railcar03</h4>
+    Unicode value: e90i<br>
+    Angular icon: faRailcar03
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-railcar04 fa-2x"></i><br> 
+    fa-railcar04</h4>
+    Unicode value: e90j<br>
+    Angular icon: faRailcar04
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-filled-railcar fa-2x"></i><br> 
+    fa-filled-railcar</h4>
+    Unicode value: e90g<br>
+    Angular icon: faFilledRailcar
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-railway-station fa-2x"></i><br> 
+    fa-railway-station</h4>
+    Unicode value: e903<br>
+    Angular icon: faRailwayStation
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-shipment-box fa-2x"></i><br> 
+    fa-shipment-box</h4>
+    Unicode value: e904<br>
+    Angular icon: faShipmentBox
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train-crossing fa-2x"></i><br> 
+    fa-train-crossing</h4>
+    Unicode value: e909<br>
+    Angular icon: faTrainCrossing
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train-cross-tracks fa-2x"></i><br> 
+    fa-train-cross-tracks</h4>
+    Unicode value: e90a<br>
+    Angular icon: faTrainCrossTracks
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train-stop fa-2x"></i><br> 
+    fa-train-stop</h4>
+    Unicode value: e90b<br>
+    Angular icon: faTrainStop
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train-tracks fa-2x"></i><br> 
+    fa-train-tracks</h4>
+    Unicode value: e90c<br>
+    Angular icon: faTrainTracks
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train-tracks02 fa-2x"></i><br> 
+    fa-train-tracks02</h4>
+    Unicode value: e90d<br>
+    Angular icon: faTrainTracks02
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-tracks-highway fa-2x"></i><br> 
+    fa-tracks-highway</h4>
+    Unicode value: e90n<br>
+    Angular icon: faTracksHighway
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train-tracks03 fa-2x"></i><br> 
+    fa-train-tracks03</h4>
+    Unicode value: e90s<br>
+    Angular icon: faTrainTracks03
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train-tracks-repair fa-2x"></i><br> 
+    fa-train-tracks-repair</h4>
+    Unicode value: e90t<br>
+    Angular icon: faTrainTracksRepair
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train-tunnel fa-2x"></i><br> 
+    fa-train-tunnel</h4>
+    Unicode value: e90u<br>
+    Angular icon: faTrainTunnel
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-doubletracks-curve fa-2x"></i><br> 
+    fa-doubletracks-curve</h4>
+    Unicode value: e90f<br>
+    Angular icon: faDoubletracksCurve
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-curve-track fa-2x"></i><br> 
+    fa-curve-track</h4>
+    Unicode value: e90e<br>
+    Angular icon: faCurveTrack
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-tanker-money fa-2x"></i><br> 
+    fa-tanker-money</h4>
+    Unicode value: e90v<br>
+    Angular icon: faTankerMoney
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-train-magnified fa-2x"></i><br> 
+    fa-train-magnified</h4>
+    Unicode value: e90w<br>
+    Angular icon: faTrainMagnified
+  </div><!-- /cell -->
+  <div class="small-6 medium-4 large-3 cell">
+    <h4><i class="fqts fa-tankcar-magnified fa-2x"></i><br> 
+    fa-tankcar-magnified</h4>
+    Unicode value: e90x<br>
+    Angular icon: faTankcarMagnified
+  </div><!-- /cell -->
+</section><!-- /grid-x -->
+
+                </div><!-- /cell -->
+              </div><!-- /grid-x -->
+            </main><!-- /main grid-container -->    </div>
+    
+        <footer>
+          <div class="grid-container-fluid">
+            <div class="grid-x grid-padding-x">
+              <div class="small-12 cell">
+                <p>Copyright &copy; 
+                    <script type="text/javascript">
+                        today=new Date();
+                        year0=today.getFullYear();
+                        document.write(year0);
+                    </script> 
+                    QTS. All rights reserved. </p>
+              </div>
+            </div>
+          </div>
+        </footer>    
+    <script src="/assets/js/scripts.min.js"></script>
+    <script src="/assets/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

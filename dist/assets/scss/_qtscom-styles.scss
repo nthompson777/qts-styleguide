@@ -1,0 +1,1469 @@
+// QTS.com Styles
+// -------------------------------
+
+// FontAwesome 5 Icons Shift fix: https://fontawesome.com/how-to-use/performance-and-security#async-loading-indicators
+// body {
+  // transition: 0.20s;
+  // transition-timing-function: ease-in;
+  // display: none;
+// }
+
+// .fontawesome-i2svg-active body {
+//  display: initial;
+// }
+
+nav li a.button {
+  width: 108px;
+}
+
+// End FA 5 Icon shift fix ----------------------
+
+.scroll-top-wrapper {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1004;  // 1 < $reveal-index
+  background-color: $secondary-color;
+  color: $white;
+  width: 40px;
+  height: 40px;
+  line-height: 42px;
+  right: 30px;
+  bottom: 30px;
+  border-radius: $global-radius;
+  transition: all 0.6s ease-in-out;
+
+  @include breakpoint(small only) {
+    bottom: 10px;
+  }
+
+  &.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 0.6;
+  
+    &:hover {
+      opacity: 1.0;
+    }
+  }
+}
+
+ // .sticky-container {
+ // position: fixed;
+ // width: 100%;
+ // z-index: 1;
+ // height: 80px !important;
+
+ // @media screen and (max-width: 824px) {
+ //   height: inherit !important;
+//   }
+// }
+
+a[href^="tel"] {
+  color: inherit;
+  text-decoration: none;
+}
+
+.panel-container {
+  background: rgba(255, 255, 255, .7)
+}
+
+// Get rid of the down arrows on the main nav dropdowns
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  display: none;
+}
+
+.mainlogo {
+	padding-left: 1rem;
+	font-size: inherit;
+
+  @media screen and (max-width: 824px) {
+    padding-left: 0.5rem;
+    padding-bottom: 5px;
+  }
+
+	img {
+		height: 45px;
+    transition: height .35s ease;
+    margin-top: -5px;
+
+    @media screen and (max-width: 824px) {
+      max-height: 35px;
+      margin-top: 5px;
+    }
+	}
+}
+
+section {
+  margin: 0 0 40px;
+}
+
+.footer-logo {
+
+  img {
+    height: 55px;
+    margin-top: 20px;
+    float: right;
+
+    @include breakpoint(small only) {
+      float: left;
+      margin-bottom: 20px;
+      margin-top:0;
+    }
+  }
+}
+
+footer {
+  margin-top: 0;
+  padding: 0;
+  text-align: inherit;
+  background-color: inherit;
+  
+  .footerTop {
+    display: block;
+    position: relative;
+    background-size: cover;
+    padding: 50px 0;
+    color: $white;
+
+    &:before {
+      content: '';
+      background: url('../../assets/img/qts_logo_BG_angled.png') no-repeat;
+      background-color: lighten($primary-color, 10%);
+      background-size: 32%;
+      background-position-x: 26%;
+      background-position-y: -8px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+
+      @include breakpoint(medium only) {
+        background-size: 43%;
+        background-position-y: 42px;
+      }
+
+      @include breakpoint(small only) {
+        background-size: 75%;
+        background-position-y: 72px;
+      }
+    }
+
+    a {
+      color: $white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    h2, h3, h4 {
+      color: $white;
+    }
+
+    @include breakpoint(small only) {
+      h3 {
+        margin-top: 20px;
+      }
+    }
+
+    .twitter-feed {
+
+      @include breakpoint(small only) {
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }  
+    }
+
+    .social-media {
+      float: right;
+      
+      @include breakpoint(medium down) {
+        float: left;
+      }
+
+      @include breakpoint(medium only) {
+        margin-top: 30px;
+      }
+    
+      .social-media-icons {
+        svg {
+          margin-right: 30px;
+          margin-top: 10px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .footerBottom {
+    background: #015184;
+    padding: 40px 0;
+    color: #1EA7FF;
+    font-size: .85rem;
+
+    @include breakpoint(small only) {
+      padding: 30px 0 10px;
+    }
+    
+    .footer-links {
+      margin-bottom: 10px;
+
+      a {
+        color: $white;
+        margin: 0 7px;
+        
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:hover {
+          text-decoration: underline;
+          color: #1EA7FF;
+        }
+      }
+
+      ul.menu {
+        @media screen and (max-width: 510px) {
+          margin: 10px 0 30px;
+        }
+
+        li {
+          border-right: solid 1px;
+          padding-right: 7px;
+
+          @media screen and (max-width: 510px) {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 0px 10px 10px 0;
+            border-bottom: solid 1px;
+            margin: 10px 15px;
+            border-right: none;
+          }
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Accordion Menus within Off-Canvas Menu
+// -------------------------------
+.accordion-menu .nested.is-accordion-submenu {
+  margin-left: 2rem;
+}
+
+.off-canvas {
+  .button.expanded {
+    width: 80%;
+    margin: 10px auto 20px;
+  }
+
+  li.title {
+    padding: 1.2rem .4rem .7rem 0;
+    padding-left: 0;
+    padding-bottom: .4rem;
+  }
+}
+
+
+// Top Bar Nav
+// -------------------------------
+.mobile-login {
+  margin-left: auto;
+  margin-bottom: -15px;
+}
+
+.top-bar {
+	height: 4.5em;
+	width: 100%;
+	color: $topbar-color;
+  // margin-bottom: $topbar-bottom-margin;
+	// border-bottom: solid 1px #efefef;
+	box-shadow: 0 25px 20px -29px rgba(0,0,0,0.35);
+  // transition: height .4s ease;
+
+  @media screen and (max-width: 824px) {
+    height: inherit;
+    margin-bottom: inherit;
+    display: none;
+  }
+
+  .mainlogo img {
+    max-height: 50px;
+  }
+
+  .is-dropdown-submenu > li {
+    // border-bottom: solid 1px $medium-gray;
+    transition: all .15s ease;
+
+    a {
+      border-bottom: solid 1px $medium-gray;
+      
+      &.active {
+        border-bottom: none;
+      }
+    }
+
+    &:hover {
+      background: $light-gray;
+    }
+  }
+
+  .is-dropdown-submenu-parent {
+    margin: 0 5px;
+    
+    @media screen and (max-width: 900px) {
+      margin: 0;
+    }
+  }
+  
+  ul {
+    transition: all .25s ease;
+    background: transparent;
+
+    @media screen and (max-width: 824px) {
+      background: $white;
+    }
+
+    &.submenu {
+      background: $white;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+      border: none;
+    }
+  }
+
+  .button.secondary {
+    color: $white;
+    margin: 1px 15px 0 20px;
+    padding: 10px;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  // &.shrink {
+    // background-color: rgba( $white,0.85) !important;
+  // }
+
+	// &.sticky {
+	//	overflow: visible;  // Corrects the dropdown menus on the sticky header so they're not cut off
+	// }
+
+	// .top-bar-right, 
+	// .top-bar-left {
+  //	transition: padding-top .25s ease;
+  // 	padding-top: 0;  // 1.4em
+	// }
+
+	// &.shrink {
+		// height: 3.25em;
+		// box-shadow: 0 25px 15px -25px rgba(0,0,0,0.35);
+		// overflow-y: hidden;
+
+		// .mainlogo img {
+		// 	height:  40px;
+		// }
+
+		// .top-bar-right, 
+		// .top-bar-left {
+		//	padding-top: 0em;
+		// }
+	// }
+
+  .menu {
+		.active a,
+    .active > a,
+    a.active {
+      color: $white; // $secondary-color
+			background: lighten($primary-color, 10%); // none
+      pointer-events: none;
+      // font-weight: bold;
+    }
+
+    > li > a {
+			color: $topbar-color;
+
+      &:hover {
+				color: $topbar-color-hover;
+      }
+	  }
+  }
+}
+
+
+// Off-canvas Menu
+// --------------------------------
+.off-canvas li.title img {
+  height: 40px;
+  margin: 10px 0 10px 15px;
+}
+
+#offCanvasMenu .menu {
+  .active a,
+  .active > a,
+  a.active {
+    color: $secondary-color;
+    pointer-events: none;
+  }
+}
+
+
+// Top Nav Breakpoint & Prevent FOUC for our Mobile Menu
+// --------------------------------
+@media screen and (max-width: 824px) {
+  header.top-bar.sticky {
+    display: none;
+  }
+
+  #resp-menu {
+    display: none;
+  }
+
+  .title-bar {
+    display: flex !important;
+    // background: transparent;
+  }
+}
+
+@media screen and (min-width: 825px) {
+  .title-bar {
+    display: none !important;
+  }
+
+  #resp-menu {
+    display: none !important;
+  }
+}
+
+sup {
+  position: inherit;
+  vertical-align: top;
+  line-height: inherit;
+}
+
+
+// Hero Images
+// -------------------------------
+section.hero {
+  margin-bottom: 0;
+  // margin-top: -20px;
+  padding: 140px 0;
+
+  @media screen and (max-width: 824px) {
+    margin-top: 0;
+    padding: 40px 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+
+    @include breakpoint(small only) {
+      font-size: 2.25rem;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+
+    @include breakpoint(small only) {
+      font-size: 1.75rem;
+    }
+  }
+
+  h1, h2 {
+    color: $white;
+  }
+
+  .button {
+    margin-top: 40px;
+  }
+}
+
+.quote-text-lg {
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+#home {
+  .hero {
+    // background: url('../../assets/img/heroes/qtshome_hero_v2.jpg') no-repeat top center;
+    // color: lighten($black, 30%); 
+    background: url('../../assets/img/heroes/home_BLUE_train.jpg') no-repeat top center;
+    min-height: 600px;
+    background-position-y: 0;
+    background-size: cover;
+    
+    @include breakpoint(xlarge) {
+      background-position-y: -80px;
+    }
+
+    @media screen and (max-width: 824px) {
+      min-height: inherit;
+    }
+
+    .hollow {
+      border-color: $white;
+      color: $white;
+      transition: all .55s ease;
+
+      &:hover {
+        border-color: $secondary-color;
+        background-color: $secondary-color 
+      }
+    }
+  }
+}
+
+#aboutus {
+  .hero {
+    background: url('../../assets/img/heroes/QTS_history_collage.jpg') no-repeat;  
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge only) {
+      background-position-y: -280px;
+    }   
+  }
+}
+
+#brand {
+  .hero {
+    background: url('../../assets/img/heroes/branding.jpg') no-repeat;  
+    background-size: cover;
+    background-position: 0;
+    padding: 100px 0;
+
+    @include breakpoint(large) {
+      background-position-y: -50px;
+    }
+
+    @include breakpoint(xlarge) {
+      background-position-y: -140px;
+    }   
+  }
+}
+
+#careers {
+  .hero {
+    background: url('../../assets/img/heroes/bridge_steamengine.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -140px;
+      padding: 175px 0;
+    } 
+  }
+}
+
+#contact,
+#contact-success {
+  .hero {
+    background: url('../../assets/img/heroes/passengercars_nature.jpg') no-repeat;  // train_derailexplode.jpg   
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -100px;
+      padding: 175px 0;  //   250px 0
+    } 
+  }
+}
+
+#downloads {
+  .hero {
+    background: url('../../assets/img/heroes/tracks_beach.jpg') no-repeat;  
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge) {
+      background-position-y: -300px;
+      padding: 175px 0;
+    } 
+  }
+}
+
+#edi {
+  .hero {
+    background: url('../../assets/img/heroes/qts_dataMap.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -250px;
+    } 
+
+  }
+}
+
+#error {
+  .hero { 
+    background: url('../../assets/img/heroes/tracks_vinestunnel.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -250px;
+    } 
+  }
+}
+
+#ffa {
+  .hero {
+    background: url('../../assets/img/heroes/raintraincar_fast.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge only) {
+      background-position-y: -240px;
+    }
+
+    @include breakpoint(xxlarge only) {
+      background-position-y: -350px;
+    } 
+
+  }
+}
+
+#fleetmanager {
+  .hero {
+    background: url('../../assets/img/heroes/oiltankers_landing.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -190px;
+    } 
+  }
+}
+
+#fpa {
+  .hero {
+    background: url('../../assets/img/heroes/tracks_sunshine.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -130px;
+    } 
+  }
+}
+
+#industrynews {
+  .hero {
+    background: url('../../assets/img/heroes/overhead_railyard.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge) {
+      background-position-y: -200px;
+      padding: 180px 0;
+    } 
+  }
+}
+
+#othermodules {
+  .hero {
+    background: url('../../assets/img/heroes/traincars_factory.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -260px;
+    }
+
+    @include breakpoint(xxlarge) {
+      background-position-y: -300px;
+      padding: 175px 0;
+    } 
+  }
+}
+
+#plantmanager {
+  .hero {
+    background: url('../../assets/img/heroes/loading_traincar.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge) {
+      background-position-y: -240px;
+      padding: 175px 0;
+    } 
+  }
+}
+
+#poe {
+  .hero {
+    // Gradient Overlay for BG: linear-gradient(to bottom, rgba($white,.4) 6%,rgba($black,.4) 17%,rgba($black,.7) 100%)
+    background: url('../../assets/img/heroes/trainWheels_sun.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .lightTriangles-bg {
+    
+    @include breakpoint(small only) {
+      margin-top: 0;
+    }
+
+    img {
+      max-height: 180px;
+      margin-top: 20px;
+    }
+
+    svg {
+      margin-top: 20px;
+
+      @include breakpoint(small only) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+#principles {
+  .hero {
+    background: url('../../assets/img/heroes/train_cloudsfactory.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge only) {
+      background-position-y: -260px;
+    }
+
+    @include breakpoint(xxlarge only) {
+      background-position-y: -350px;
+    } 
+  }
+}
+
+#privacy {
+  .hero {
+    background: url('../../assets/img/heroes/nighttime_railway.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge only) {
+      background-position-y: -175px;
+      padding: 175px 0;
+    } 
+  }
+}
+
+#processmanager {
+  .hero {
+    background: url('../../assets/img/heroes/coalcars_inline.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge only) {
+      background-position-y: -75px;
+      padding: 175px 0;
+    } 
+  }
+}
+
+#ptm {
+  .hero {
+    background: url('../../assets/img/heroes/trainyard_redsky.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge only) {
+      background-position-y: -75px;
+      padding: 175px 0;
+    } 
+  }
+}
+
+#qtsnews {
+  .hero {
+    background: url('../../assets/img/heroes/trainengine_town.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -200px;
+    }
+
+    @include breakpoint(xxlarge only) {
+      background-position-y: -240px;
+      padding: 180px 0;
+    }
+  }
+}
+
+#ras {
+  .hero {
+    background: url('../../assets/img/heroes/charts_bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge) {
+      background-position-y: -70px;
+    } 
+  }
+}
+
+#railroadcontacts {
+  .hero {
+    background: url('../../assets/img/heroes/vintage_railway.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge only) {
+      background-position-y: -190px;
+      padding: 200px 0;
+    }
+  }
+}
+
+#sdt {
+  .hero {
+    background: url('../../assets/img/heroes/whiteClean_train_sun.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge only) {
+      background-position-y: -55px;
+      padding: 175px 0;
+    } 
+  }
+
+  .icon-cont {
+    min-height: 175px;
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+#smartrail  {
+  .hero {
+    background: url('../../assets/img/heroes/tracks_greenmountain.jpg') no-repeat;  
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xxlarge) {
+      background-position-y: -200px;
+      padding: 175px 0;
+    }   
+  }
+}
+
+#terms {
+  .hero {
+    background: url('../../assets/img/heroes/orangetrain_grayskies.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -135px;
+      padding: 175px 0;
+    }   
+  }
+}
+
+#trackingmanager {
+  .hero {
+    background: url('../../assets/img/heroes/trainYard_nearHighway.jpg') no-repeat;  
+    background-size: cover;
+    background-position: 0;
+
+    @include breakpoint(xlarge) {
+      background-position-y: -150px;
+    }   
+  }
+}
+
+
+// Home Page Only Styles
+// ------------------------------- 
+#home {
+
+  section.after-hero {
+    margin-bottom: 0;
+    background: #f4f2f2; // #f9f8f8;
+    padding: 80px 0 40px;
+
+    @media screen and (max-width: 824px) {
+      padding-top: 40px;
+    }
+
+    h2 {
+      color: darken($dark-gray, 10%);
+    }
+  }
+
+  .input-group > :first-child {
+    border-right: none;
+  }
+
+  .services {
+
+    svg.svg-inline--fa {
+      margin-bottom: 20px;
+      color: $primary-color;
+    }
+
+    .cell  {
+      margin-bottom: 40px;
+    }
+
+    h5 {
+      color: $primary-color;
+    }
+  }
+
+  .lightTriangles-bg {
+    padding: 110px 0;
+    margin-bottom: 0;
+  
+    .cell {
+      margin-bottom: 0;
+    }
+
+    .grid-x {
+      margin-bottom: 0;
+    }
+  }
+}
+// END Home Styles ------------------
+
+.blog-bg {
+  padding: 60px 0 40px;
+  margin-bottom: 0;
+  background-color: $white;  
+}
+
+.principles-bg {
+  display: block;
+  position: relative;
+  background-size: cover;
+  color: $white;
+  padding: 80px 0 40px;
+  margin-bottom: 0;
+
+  &:before {
+    content: '';
+    background: url('../../assets/img/train01_bg.png') no-repeat $dark-gray;
+    background-size: 90%;
+    background-position-x: 120%;
+    background-position-y: 70px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  h2, h3, h4, h5 {
+    color: $white;
+  }
+
+  .cell  {
+    margin-bottom: 50px;
+  }
+
+  img {
+    max-height: 160px;
+    margin-top: -10px;
+  }
+
+}
+
+.dark-bg {
+  background: darken($dark-gray, 15%);
+  color: $white;
+  padding: 80px 0;
+
+  h2, h3, h4, h5 {
+    color: $white;
+  }
+
+  .cell {
+    margin-bottom: 60px;
+  }
+}
+
+.lightTriangles-bg {
+  background: url('../../assets/img/bg-flat-triangles.jpg') repeat-y;
+  background-position-y: -80px;
+  padding: 60px 0;  // 60px 0 40px
+  margin-bottom: 0;
+
+  .grid-x {
+    margin-bottom: 0; // 40px 
+
+    .grid-x {
+      margin-bottom: 40px;  
+    }
+
+    // Get rid of the extra margins on nested rows
+    .grid-x:last-child {
+      margin-bottom: 0;
+
+      @include breakpoint(small only) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.accordion .grid-x {
+  margin-bottom: 40px;
+}
+
+
+// Fade-in/Slide Block Elements onScroll to prevent FOUC
+// ---------------------------------
+.reveal-scroll,
+.reveal-scroll-alt,
+.reveal-slide-left,
+.reveal-slide-right,
+.reveal-slow-fadein {
+	visibility: hidden;
+}
+
+
+// CMS Overrides & Styles
+// ----------------------------- 
+// dl:first-child.fields-container {
+//  margin-bottom: -7px;
+// }
+
+dl {
+  line-height: inherit;
+}
+
+span.star,
+.g-recaptcha.required:after {
+  display: none;
+}
+
+label#jform_captcha-lbl {
+  visibility: hidden;
+  height: 10px;
+}
+
+textarea[rows] {
+  max-width: inherit;
+  height: 125px;
+  resize: none;
+}
+
+input {
+  max-width: inherit;
+}
+
+#system-message-container .callout {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-right: none;
+  border-left: none;
+}
+
+.blog {
+  p,
+  span {
+    font-family: $body-font-family;
+    font-size: $global-font-size !important;
+    color: $body-font-color !important;
+    line-height: $global-lineheight !important;
+  }
+}
+
+// Muted Color Text (ex. - used on Blog details sections)
+.muted {
+  color: $dark-gray;
+}
+
+// .bottom-footer li:not(:last-child):after{
+//   content: '|';
+// }
+
+
+// QTS Branding Page Styles
+// -----------------------------
+#brand {
+
+  .thumbnail {
+    padding: 50px;
+    background: $white;
+  
+    &.palette,
+    &.no-whitespace {
+      padding: 0;
+      border: none;
+    }
+
+    &.clearing-space {
+      padding: 20px;
+      max-height: 250px;
+    }
+  }
+}
+
+
+// Timeline Styles
+// -----------------------------
+
+@media only screen and (max-width: 1169px) {
+  .cd-timeline__img .svg-inline--fa {
+    color: #fefefe;
+    position: relative;
+    top: 7px;
+    left: 10px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-is-hidden {
+    visibility: hidden;
+  }
+}
+
+.cd-timeline {
+  overflow: hidden;
+  margin: 2em auto;
+}
+
+.cd-timeline__container {
+  position: relative;
+  // width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.cd-timeline__container::before {
+  // vertical line 
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: $medium-gray;
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  .cd-timeline__container::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+.cd-timeline__block {
+  position: relative;
+  margin: 2em 0;
+}
+
+.cd-timeline__block:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-timeline__block:first-child {
+  margin-top: 0;
+}
+
+.cd-timeline__block:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline__block {
+    margin: 4em 0;
+  }
+}
+
+.cd-timeline__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+
+  .svg-inline--fa {
+    color: $white;
+  }
+}
+
+.cd-timeline__img img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+}
+
+.cd-timeline__img.cd-timeline__img--primary {
+  background: lighten($primary-color, 7%);
+}
+
+.cd-timeline__img.cd-timeline__img--secondary {
+  background: lighten($secondary-color, 7%);
+}
+
+.cd-timeline__img.cd-timeline__img--tertiary {
+  background: lighten($tertiary-color, 7%);
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline__img {
+    width: 45px;
+    height: 45px;
+    left: 50%;
+    margin-left: -22px;
+    /* Force Hardware Acceleration */
+    transform: translateZ(0);
+
+    .svg-inline--fa {
+      position: relative;
+      top: 10px;
+      left: 13px;
+      color: $white;
+    }
+  }
+  .cd-timeline__img.cd-timeline__img--bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-1 0.6s;
+            animation: cd-bounce-1 0.6s;
+  }
+}
+
+@-webkit-keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.cd-timeline__content {
+  position: relative;
+  margin-left: 60px;
+  border-radius: $global-radius;
+  padding: 1em;
+  box-shadow: 0 3px 0 $medium-gray;
+  background: $white;
+
+  .button {
+    float: right;
+    margin-top: 5px;
+  }
+}
+
+.cd-timeline__content:after {
+  /* clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-timeline__content::before {
+  /* triangle next to content block */
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 15px solid transparent;
+  border-right: 15px solid $white;
+}
+
+.cd-timeline__content p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+.cd-timeline__read-more,
+.cd-timeline__date {
+  display: inline-block;
+}
+
+.cd-timeline__date {
+  font-size: 1.3rem;
+  float: left;
+  padding: 7px 0;
+  opacity: .7;
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-timeline__content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%;
+    /* Force Hardware Acceleration */
+    transform: translateZ(0);
+
+    .button {
+      float: left;
+      margin-top: 5px;
+    }
+  }
+  .cd-timeline__content::before {
+    top: 10px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: $white;
+  }
+  .cd-timeline__read-more {
+    float: left;
+  }
+  .cd-timeline__date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: -5px;
+    font-size: 1.6rem;
+  }
+  .cd-timeline__block:nth-child(even) .cd-timeline__content {
+    float: right;
+  }
+  .cd-timeline__block:nth-child(even) .cd-timeline__content::before {
+    top: 10px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: $white;
+  }
+  .cd-timeline__block:nth-child(even) .cd-timeline__read-more {
+    float: right;
+  }
+  .cd-timeline__block:nth-child(even) .cd-timeline__date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+  .cd-timeline__content.cd-timeline__content--bounce-in {
+    visibility: visible;
+    -webkit-animation: cd-bounce-2 0.6s;
+            animation: cd-bounce-2 0.6s;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  /* inverse bounce effect on even content blocks */
+  .cd-timeline__block:nth-child(even) .cd-timeline__content.cd-timeline__content--bounce-in {
+    -webkit-animation: cd-bounce-2-inverse 0.6s;
+            animation: cd-bounce-2-inverse 0.6s;
+  }
+}
+
+@-webkit-keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes cd-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
