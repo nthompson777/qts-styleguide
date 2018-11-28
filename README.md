@@ -1,7 +1,5 @@
 # qts-styleguide
 
-[![GitHub license](https://img.shields.io/github/license/nthompson777/ng-font-qts.svg)](https://github.com/nthompson777/ng-font-qts/blob/master/LICENSE) 
-
 
 ## Table of contents
 1. [Getting Started](#getting-started)
